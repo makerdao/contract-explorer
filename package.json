@@ -1,0 +1,27 @@
+{
+  "name": "contract-explorer",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@makerdao/dai": "^0.5.7",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.18.2",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.0.9",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server",
+    "start:https": "webpack-dev-server --https"
+  }
+}
