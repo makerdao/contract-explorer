@@ -2,6 +2,7 @@ import './index.scss';
 import Maker, { DAI } from '@makerdao/dai';
 import Vue from 'vue';
 import MakerDebugger from './components/MakerDebugger.vue';
+import inspectContract from '../src/inspector';
 
 function updateInfo(cdp) {
   return Promise.all([
@@ -54,7 +55,8 @@ setTimeout(() => {
       render: createElement =>
         createElement('maker-debugger', {
           props: {
-            maker: window.maker
+            maker: window.maker,
+            inspectContract
           }
         }),
       components: { MakerDebugger }
