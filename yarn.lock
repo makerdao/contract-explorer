@@ -16,11 +16,10 @@
     esutils "^2.0.2"
     js-tokens "^3.0.0"
 
-"@makerdao/dai@^0.5.7":
-  version "0.5.7"
-  resolved "https://registry.yarnpkg.com/@makerdao/dai/-/dai-0.5.7.tgz#b2b076e85ca117096980168d97c2c7c05d2132ca"
+"@makerdao/dai@latest":
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/@makerdao/dai/-/dai-0.6.0.tgz#086bd6253397ebf49d749bcc6337cd5f5476b038"
   dependencies:
-    babel-polyfill "^6.26.0"
     babel-runtime "^6.26.0"
     bignumber.js "^7.2.1"
     bunyan "^1.8.12"
@@ -797,14 +796,6 @@ babel-plugin-transform-strict-mode@^6.24.1:
   dependencies:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
-
-babel-polyfill@^6.26.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
-  dependencies:
-    babel-runtime "^6.26.0"
-    core-js "^2.5.0"
-    regenerator-runtime "^0.10.5"
 
 babel-preset-env@^1.7.0:
   version "1.7.0"
@@ -5224,10 +5215,6 @@ reduce-function-call@^1.0.1:
 regenerate@^1.2.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"
-
-regenerator-runtime@^0.10.5:
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
 
 regenerator-runtime@^0.11.0:
   version "0.11.1"

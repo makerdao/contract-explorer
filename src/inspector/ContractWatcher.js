@@ -20,8 +20,8 @@ export default class ContractWatcher {
       ),
       node = new ContractNode(
         this._contract,
-        contract.getAddress().toUpperCase(),
-        contract.getSigner().address.toUpperCase()
+        contract.address.toUpperCase(),
+        contract.signer.address.toUpperCase()
       ),
       allWatchers = this._getPropertyWatchers(info.abi, contract).concat(
         Object.values(watchers[this._contract] || [])

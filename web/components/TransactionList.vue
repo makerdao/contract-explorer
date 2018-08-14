@@ -36,10 +36,11 @@
       callInfo: function(tx) {
         let result = '';
 
-        if (tx._original && tx._original._transaction && tx._original._transaction._callInfo) {
-          result = '<strong>' + tx._original._transaction._callInfo.contract + '.' +
-            tx._original._transaction._callInfo.call + '</strong> (' +
-            tx._original._transaction._callInfo.args.map(a => JSON.stringify(a._bn ? a.toString() : a)).join(', ') + ')';
+        if (tx.metadata) {
+          const { contract, method, args = [] } = tx.metadata;
+          const argslist = args.map(a =>
+            JSON.stringify(a._bn ? a.toString() : a)).join(', ');
+          result = `<strong>${contract}.${method}</strong> (${argslist})`;
         }
 
         return result;
